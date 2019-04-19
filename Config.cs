@@ -24,7 +24,7 @@ namespace IdentityServerWithAspNetIdentity
         {
             return new List<ApiResource>
             {
-                new ApiResource("api1", "My API")
+                new ApiResource( "profile-db-service-api-1", "Profile Service")
             };
         }
 
@@ -42,8 +42,8 @@ namespace IdentityServerWithAspNetIdentity
                     AccessTokenLifetime = 3600 * 24,
 
                     RedirectUris = { 
-                        "http://localhost:5100/callback",
-                        "http://localhost:5100/silent_renew.html",
+                        "http://localhost:5100/authentication/callback",
+                         "http://localhost:5100/authentication/silent_callback",
                     },
                     PostLogoutRedirectUris = 
                     { 

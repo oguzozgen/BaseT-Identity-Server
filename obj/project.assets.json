@@ -12653,11 +12653,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "Z:\\Repo\\Ouz\\asd\\IdentityServer\\IdentityServer.csproj",
+      "projectUniqueName": "Z:\\Repo\\Github\\BaseT-Identity-Server\\IdentityServer.csproj",
       "projectName": "IdentityServer",
-      "projectPath": "Z:\\Repo\\Ouz\\asd\\IdentityServer\\IdentityServer.csproj",
+      "projectPath": "Z:\\Repo\\Github\\BaseT-Identity-Server\\IdentityServer.csproj",
       "packagesPath": "C:\\Users\\oguz\\.nuget\\packages\\",
-      "outputPath": "Z:\\Repo\\Ouz\\asd\\IdentityServer\\obj\\",
+      "outputPath": "Z:\\Repo\\Github\\BaseT-Identity-Server\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
