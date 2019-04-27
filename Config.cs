@@ -57,7 +57,20 @@ namespace IdentityServerWithAspNetIdentity
                         IdentityServerConstants.StandardScopes.Profile,
                         "api1"
                     },
+                },
+                 new Client
+                {
+                    ClientId = "native.code",
+                    ClientName = "Native Client (Code with PKCE)",
+                    RequireClientSecret = false,
+                    RedirectUris = { "io.identityserver.demo:/oauthredirect" },
+                    AllowedGrantTypes = GrantTypes.Code,
+                    RequirePkce = true,
+                    AllowedScopes = { "openid", "profile" },
+                    AllowOfflineAccess = true
                 }
+
+
             };
         }
     }
