@@ -24,7 +24,32 @@ namespace IdentityServerWithAspNetIdentity
         {
             return new List<ApiResource>
             {
-                new ApiResource( "profile-db-service-api-1", "Profile Service")
+                //new ApiResource( "verywon-dbservice", "verywon-dbservice")
+               new ApiResource
+                    {
+                        Name = "verywon-dbservice",
+
+                        Scopes =
+                        {
+                            
+                            new Scope()
+                            {
+                                Name = "verywon-dbservice",
+                                DisplayName = "Full access to API 2"
+                            },
+                            new Scope()
+                            {
+                                Name = "verywon-dbservice.merhabain",
+                                DisplayName = "merhabain access to API 2"
+                            },
+                            new Scope
+                            {
+                                Name = "verywon-dbservice.read_only",
+                                DisplayName = "Read only access to API 2"
+                            }
+                        }
+                    }
+               
             };
         }
 
@@ -55,7 +80,7 @@ namespace IdentityServerWithAspNetIdentity
                     {
                         IdentityServerConstants.StandardScopes.OpenId,
                         IdentityServerConstants.StandardScopes.Profile,
-                        "api1"
+                        "verywon-dbservice"
                     },
                 },
                  new Client
